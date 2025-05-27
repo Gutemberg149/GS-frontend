@@ -1,11 +1,12 @@
 const header = document.getElementById("mainHeader");
 let ultimaRolagemn = 0;
 
+//Efetio do do header
 window.addEventListener("scroll", () => {
     const currentRolagem = window.scrollY;
 
     if (currentRolagem <= 0) {
-        // Mantein o header visivel
+        // Mantem o header visivel
         header.classList.remove("hide");
         return;
     }

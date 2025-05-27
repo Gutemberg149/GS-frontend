@@ -1,4 +1,4 @@
-root{
+:root{
     --font-dark-blue:rgb(2, 27, 78);
 }
 
@@ -9,6 +9,13 @@ align-items: center;
 justify-content: center;
 
 }
+
+h1{
+    text-align: center;
+    color: var(--font-dark-blue);
+    margin-bottom:2rem ;
+    font-size:4rem;
+ }
 
 .banner{
     width: 100vw;
@@ -38,7 +45,7 @@ justify-content: center;
     background-size: cover;
     width: 70%;
     height: 70vh;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     z-index: 90;
 
 }
@@ -57,7 +64,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     border: 5px solid white;
     border-radius: 20px;
     overflow: hidden;
