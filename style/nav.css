@@ -15,6 +15,7 @@ header{
     background-repeat: no-repeat;
     z-index: 100;
     transition: 0.5s ease-in-out all;
+   
 
 }
 
@@ -29,6 +30,7 @@ nav {
     place-items: center;
     border-radius: 30px;
     background-color: rgba(211, 236, 244, 0.961);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 nav ul{
