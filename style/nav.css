@@ -1,0 +1,52 @@
+:root{
+    --font-dark-blue:rgb(2, 27, 78);
+}
+
+header{
+    position: fixed;
+    top: 0rem;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    transition: 0.5s ease-in-out all;
+
+}
+
+#mainHeader.hide {
+    transform: translateY(-130%); 
+}
+
+nav {
+    width: 90%;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 30px;
+    background-color: rgba(211, 236, 244, 0.961);
+}
+
+nav ul{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    color: var(--font-dark-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease-in-out all;
+    padding: 5px;
+}
+
+nav ul li:hover{
+    transform: scale(1.15);
+}
