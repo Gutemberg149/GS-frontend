@@ -1,0 +1,122 @@
+:root{
+    --font-dark-blue:rgb(2, 27, 78);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    animation: aparecerH1 5s ease forwards; 
+}
+
+
+@keyframes aparecerH1 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+h1{
+    text-align: center;
+    color: var(--font-dark-blue);
+    font-size:2.5rem;
+    margin: 8rem 0 2rem 0;
+ }
+
+
+#sec01{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 70vw;
+    height: 60vh;
+    background-image: url(../img/solucao/São_Paulo.jpg);
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid blue; */
+}
+
+#weather_container{
+    width: 14rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(249, 241, 231, 0.772);
+}
+
+#temp_box{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#temp_value{
+    font-weight: 700 ;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+    
+}
+ #temp_value .temp_numb{
+    font-size: 2.6rem;
+    line-height: 0.8;
+}
+
+.temp-unit {
+    line-height: 1;
+    font-size: 1rem;  
+  } 
+
+.temp-unit span{
+    margin-left: 0.4rem;
+  } 
+
+#weather-icon{
+    font-size: 2rem;
+}
+
+#city_box{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#city_box p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#city_box .state{
+    width: 35%;
+}
+
+#time_container{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(249, 241, 231, 0.704);
+}
+#time_container .hours, .dia_semana{
+    font-size: 1.1rem;
+    font-weight: 600;
+ 
+}
+
+#sec02{
+    width: 100vw;
+    height: 50vh;
+    border: 2px solid red;
+    margin: 2rem 0;
+}
