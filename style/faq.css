@@ -13,14 +13,24 @@ main{
 
 .banner{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0; 
     transform: translateY(20px);
+    margin-bottom: 6rem;
     animation: aparecerH1 5s ease forwards; 
 }
+
+h1{
+    text-align: center;
+    color: var(--font-dark-blue);
+    margin-bottom:2rem ;
+    font-size:3.8rem;
+    margin-top: 5rem;
+ 
+ }
 
 @keyframes aparecerH1 {
     from {
@@ -33,14 +43,7 @@ main{
     }
 }
 
-h1{
-    text-align: center;
-    color: var(--font-dark-blue);
-    margin-bottom:2rem ;
-    font-size:4rem;
-    margin-top: 5rem;
- 
- }
+
 
 #container{
     width: 100%;
