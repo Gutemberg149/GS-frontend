@@ -45,7 +45,7 @@ h1{
 }
 
 #weather_container{
-    width: 14rem;
+    width: 16rem;
     height: 7rem;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ h1{
 }
 
 #temp_box{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -67,6 +67,7 @@ h1{
     line-height: 1;
     
 }
+
  #temp_value .temp_numb{
     font-size: 2.6rem;
     line-height: 0.8;
@@ -75,11 +76,23 @@ h1{
 .temp-unit {
     line-height: 1;
     font-size: 1rem;  
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   } 
 
-.temp-unit span{
-    margin-left: 0.4rem;
+.temp-unit .unit_dot{
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
   } 
+
+#celcius{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
 
 #weather-icon{
     font-size: 2rem;
@@ -99,7 +112,7 @@ h1{
 }
 
 #time_container{
-    width: 10rem;
+    width: 8rem;
     height: 5rem;
     display: flex;
     flex-direction: column;
@@ -107,46 +120,94 @@ h1{
     justify-content: center;
     background-color: rgba(249, 241, 231, 0.704);
 }
-#time_container .hours, .dia_semana{
+
+
+#time_container #relogio{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#time_container #dia_semana{
     font-size: 1.1rem;
     font-weight: 600;
- 
+}
+
+#recomendacao{
+    margin: 4rem 0 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--font-dark-blue);
 }
 
 #sec02{
     width: 80vw;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 2rem 0;
+    margin: 0rem 0;
 }
 
-#sec02 .mensagem{
+#sec02 .mensagem {
     width: 80%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#sec02 .mensagem .div_01{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 1rem;
+    padding: 1rem;
     background-color: rgba(250, 235, 215, 0.456);
 }
 
-#sec02 .mensagem img{
+#sec02 .mensagem .div_01 img{
     width: 15rem;
     border-radius: 1rem;
 }
-#sec02 .mensagem .menagem_texto{
+#sec02 .mensagem .div_01 .mensagem_texto{
     font-size: 1.3rem;
     width: 25rem;
     text-align: start;
 }
 
-.menagem_texto_02{
-    display: none;
+.div_02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    margin-top: 2rem;
+    gap: 1rem;
 }
+.div_02 .div_02_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(250, 235, 215, 0.456);
+}
+.div_02 .div_02_box img{
+    width: 140px;
+    border-radius: 10px;
+
+}
+.div_02 .div_02_box .stron_span{
+    font-weight: 700;
+}
+
 
 .span_strong{
     font-size: 1.4rem;
@@ -157,4 +218,268 @@ h1{
     font-size: 1.4rem;
     font-weight: 800;
     color: red;
+}
+
+
+@media (max-width: 600px){
+h1{
+    font-size:1.5rem;
+    margin: 2rem 0;
+ }
+
+
+#sec01{
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    width: 80vw;
+}
+
+#weather_container{
+    width: 16rem;
+    height: 7rem;
+}
+
+#temp_box{
+    width: 90%;
+}
+
+#recomendacao{
+    font-size: 2rem;
+}
+
+#sec02{
+    width: 90vw;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+#sec02 .mensagem {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+#sec02 .mensagem .div_01{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+#sec02 .mensagem .div_01 img{
+    width: 13rem;
+    border-radius: 1rem;
+}
+#sec02 .mensagem .div_01 .mensagem_texto{
+    font-size: 1rem;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+.div_02 {
+    flex-direction: column;
+    height: 35rem;
+    justify-content: space-around;
+    width: 100%;
+}
+.div_02 .div_02_box{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
+    padding:  1rem;
+}
+
+.div_02 .div_02_box .stron_span{
+    font-size: 0.8rem;
+}
+.text_div_02{
+    font-size: 0.8rem;
+}
+
+.span_strong{
+    font-size: 1rem;
+}
+
+.span_red{
+    font-size: 1rem;
+}
+}
+
+@media (min-width: 601px) and (max-width: 761px){
+    h1{
+        font-size:2rem;
+        margin: 2rem 0;
+     }
+    
+    
+    #sec01{
+        padding: 3rem 1rem;
+        width: 80vw;
+    }
+    
+    #weather_container{
+        width: 16rem;
+        height: 7rem;
+    }
+    
+    #temp_box{
+        width: 90%;
+    }
+    
+    #recomendacao{
+        font-size: 2.2rem;
+    }
+    
+    #sec02{
+        width: 80vw;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    #sec02 .mensagem {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #sec02 .mensagem .div_01{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1rem;
+        padding: 1rem 0;
+    }
+    
+    #sec02 .mensagem .div_01 img{
+        width: 13rem;
+        border-radius: 1rem;
+    }
+    #sec02 .mensagem .div_01 .mensagem_texto{
+        font-size: 1rem;
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+    
+    .div_02 {
+        flex-direction: column;
+        height: 35rem;
+        justify-content: space-around;
+ 
+    }
+    .div_02 .div_02_box{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        width: 100%;
+        text-align: justify;
+        padding: 2rem 1rem;
+    }
+    
+    .div_02 .div_02_box .stron_span{
+        font-size: 1rem;
+    }
+    .text_div_02{
+        font-size: 0.9rem;
+    }
+    
+    .span_strong{
+        font-size: 1.1rem;
+    }
+    
+    .span_red{
+        font-size: 1.1rem;
+    } 
+}
+
+@media (min-width: 762px) and (max-width: 1300px){
+    h1{
+        font-size:2.3rem;
+        margin: 2rem 0;
+     }
+    
+    
+    #sec01{
+        padding: 3rem 1rem;
+        width: 80vw;
+    }
+    
+    #weather_container{
+        width: 16rem;
+        height: 7rem;
+    }
+    
+    #temp_box{
+        width: 90%;
+    }
+    
+    #recomendacao{
+        font-size: 2.2rem;
+    }
+    
+    #sec02{
+        width: 80vw;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 0.5rem;
+       
+    }
+    
+    #sec02 .mensagem {
+        width: 600px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #sec02 .mensagem .div_01{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1rem;
+        padding: 1rem 0;
+    }
+    
+    #sec02 .mensagem .div_01 img{
+        width: 13rem;
+        border-radius: 1rem;
+    }
+    #sec02 .mensagem .div_01 .mensagem_texto{
+        font-size: 1rem;
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+    
+    .div_02 {
+        flex-direction: column;
+        height: 35rem;
+        justify-content: space-around;
+ 
+    }
+    .div_02 .div_02_box{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        width: 100%;
+        text-align: justify;
+        padding: 2rem 1rem;
+    }
+    
+    .div_02 .div_02_box .stron_span{
+        font-size: 1rem;
+    }
+    .text_div_02{
+        font-size: 0.9rem;
+    }
+    
+    .span_strong{
+        font-size: 1.1rem;
+    }
+    
+    .span_red{
+        font-size: 1.1rem;
+    }
 }

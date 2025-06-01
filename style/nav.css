@@ -10,14 +10,12 @@ header{
     display: grid;
     place-items: center;
     margin-top: 0.5rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: 100;
     transition: 0.6s ease-in-out all;
    
-
+display: none;
 }
+
 
 #mainHeader.hide {
     transform: translateY(-130%); 
@@ -31,6 +29,7 @@ nav {
     border-radius: 30px;
     background-color: rgba(211, 236, 244, 0.961);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
 }
 
 nav ul{
@@ -51,4 +50,79 @@ nav ul li{
 
 nav ul li:hover{
     transform: scale(1.15);
+}
+
+@media (max-width: 600px){
+
+header{
+    top: 0rem;
+    width: auto;
+    height: auto; 
+    display: flex;
+    place-items: start;
+}
+
+
+#mainHeader.hide {
+    transform: translateX(-9.5rem); 
+}
+
+nav {
+    width: 9rem;
+    height: 15rem;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 0.3rem;
+    background-color: rgb(211, 236, 244);
+}
+
+nav ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+}
+
+nav ul li{
+    font-size: 1rem;
+    padding-left: 2px;
+    margin-bottom: 0.5rem;
+}
+
+nav ul li:hover{
+    transform: scale(1.15);
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 761px){   
+    nav {
+        width: 95%;
+        height: 3rem;
+        border-radius: 20px;
+    }
+    
+    nav ul{
+        width: 100%;
+    }
+    
+    nav ul li{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 762px) and (max-width: 992px){
+    nav {
+        width: 90%;
+        height: 3.5rem;
+        border-radius: 25px;
+    }
+    
+    nav ul{
+        width: 100%;
+    }
+    
+    nav ul li{
+        font-size: 1rem;
+    }
 }

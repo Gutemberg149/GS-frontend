@@ -25,3 +25,10 @@ body{
 a{
     color: var(--font-dark-blue);
 }
+
+
+@media (max-width: 600px){}
+
+@media (min-width: 601px) and (max-width: 761px){}
+
+@media (min-width: 762px) and (max-width: 992px){}

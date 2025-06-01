@@ -1,7 +1,7 @@
 const header = document.getElementById("mainHeader");
 let ultimaRolagemn = 0;
 
-//Efetio do do header
+//Efeito do header
 window.addEventListener("scroll", () => {
     const currentRolagem = window.scrollY;
 
