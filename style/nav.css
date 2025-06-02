@@ -12,8 +12,6 @@ header{
     margin-top: 0.5rem;
     z-index: 100;
     transition: 0.6s ease-in-out all;
-   
-display: none;
 }
 
 
@@ -29,7 +27,6 @@ nav {
     border-radius: 30px;
     background-color: rgba(211, 236, 244, 0.961);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: none;
 }
 
 nav ul{
